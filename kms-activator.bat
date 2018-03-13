@@ -21,12 +21,12 @@ set servername=xykz.f3322.org
 for %%a in (1 2 3 4 5) do set go%%a=y
 
 :zM
-echo         ********************************************************
-echo                    Microsoft KMS 激活工具   ---by dexter
 echo         *********************************************************
-echo                          1.Microsoft Windows激活(32位和64位)
-echo                          2.Microsoft Office激活(32位)
-echo                          3.Microsoft Office激活(64位)
+echo                    Microsoft KMS Activator Tool   ---by dexter
+echo         *********************************************************
+echo                          1.Microsoft Windows (32bit and 64bit)
+echo                          2.Microsoft Office (32bit)
+echo                          3.Microsoft Office (64bit)
 echo                          4.遇到激活失败输入4更换服务器
 echo                          0.退出
 
@@ -36,7 +36,7 @@ if defined go%choice% @ goto :z%choice%
 if /i "%choice%" equ "0" @exit
 echo 无效输入！！
 goto :zM
-
+pause
 
 :z1
 echo         ********************************************************
