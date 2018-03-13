@@ -13,6 +13,9 @@ for /f "tokens=6 delims=[]. " %%G in ('ver') do set win=%%G
 pushd "%~dp0"
 Title KMS activator  ---v1.2 by dexter
 
+cd /D "%SystemRoot%\System32"
+
+
 
 set servername=xykz.f3322.org
 for %%a in (1 2 3 4 5) do set go%%a=y
