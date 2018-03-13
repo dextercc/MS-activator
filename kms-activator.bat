@@ -11,7 +11,7 @@ del /f /q "%temp%\getadmin.vbs" >nul 2>nul
 for /f "tokens=6 delims=[]. " %%G in ('ver') do set win=%%G
 
 pushd "%~dp0"
-Title KMS activator  ---v1.1 by dexter
+Title KMS activator  ---v1.2 by dexter
 
 
 set servername=xykz.f3322.org
@@ -45,6 +45,7 @@ echo                          1.Windows 10 Professional
 echo                          2.Windows 10 Home
 echo                          3.Windows 8.1 Professional
 echo                          4.Windows 7 Professional
+echo                          5.Windows 10 LTSB 2016
 echo                          0.回主菜单
 
 set choice=
@@ -179,6 +180,18 @@ echo 正在激活Windows 7 Professional...
 slmgr.vbs /upk
 slmgr.vbs /skms %servername%
 slmgr.vbs /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
+slmgr.vbs /ato
+slmgr.vbs /xpr
+echo 程序运行完成，按任意键退出
+pause
+exit
+
+:s15
+echo 遇到对话框的时候点击确定
+echo 正在激活Windows 10 LTSB 2016...
+slmgr.vbs /upk
+slmgr.vbs /skms %servername%
+slmgr.vbs /ipk DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ
 slmgr.vbs /ato
 slmgr.vbs /xpr
 echo 程序运行完成，按任意键退出
