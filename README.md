@@ -10,4 +10,5 @@ This file used for activating MS product, including Windows and Office series.
 Windows 10 pro 32&64
 Office 2016 32&64 (包含零售转批量程序)
 
-
+## 一个严重问题
+现在没法解决编码问题。在github上编辑采用的是UTF8编码，由于文件中含有中文，而我的操作系统又是英文，在转换到ANSI的时候也没法正常使用。待我换回中文系统后直接发布上来吧。
