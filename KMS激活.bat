@@ -1,4 +1,5 @@
 @echo off
+chcp 936
 :ADMIN
 openfiles >nul 2>nul ||(
 echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
@@ -241,4 +242,4 @@ cscript ospp.vbs /dstatus
 echo 程序运行完成，按任意键退出
 pause
 exit
-exit
+
