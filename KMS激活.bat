@@ -19,169 +19,169 @@ for %%a in (1 2 3 4 5) do set go%%a=y
 
 :zM
 echo         ********************************************************
-echo                    Microsoft KMS ¼¤»î¹¤¾ß   ---by dexter
+echo                    Microsoft KMS æ¿€æ´»å·¥å…·   ---by dexter
 echo         *********************************************************
-echo                          1.Microsoft Windows¼¤»î(32Î»ºÍ64Î»)
-echo                          2.Microsoft Office¼¤»î(32Î»)
-echo                          3.Microsoft Office¼¤»î(64Î»)
-echo                          4.Óöµ½¼¤»îÊ§°ÜÊäÈë4¸ü»»·şÎñÆ÷
-echo                          0.ÍË³ö
+echo                          1.Microsoft Windowsæ¿€æ´»(32ä½å’Œ64ä½)
+echo                          2.Microsoft Officeæ¿€æ´»(32ä½)
+echo                          3.Microsoft Officeæ¿€æ´»(64ä½)
+echo                          4.é‡åˆ°æ¿€æ´»å¤±è´¥è¾“å…¥4æ›´æ¢æœåŠ¡å™¨
+echo                          0.é€€å‡º
 
 set choice=
-set /p choice=    ÇëÊäÈëÑ¡Ïî£¨1/2/3/4/0£©£º
+set /p choice=    è¯·è¾“å…¥é€‰é¡¹ï¼ˆ1/2/3/4/0ï¼‰ï¼š
 if defined go%choice% @ goto :z%choice%
 if /i "%choice%" equ "0" @exit
-echo ÎŞĞ§ÊäÈë£¡£¡
+echo æ— æ•ˆè¾“å…¥ï¼ï¼
 goto :zM
 
 
 :z1
 echo         ********************************************************
-echo                    Microsoft KMS ¼¤»î¹¤¾ß   ---by dexter
-echo                            ***Windows¼¤»î***
-echo                             ÇëÑ¡ÔñWindows°æ±¾
+echo                    Microsoft KMS æ¿€æ´»å·¥å…·   ---by dexter
+echo                            ***Windowsæ¿€æ´»***
+echo                             è¯·é€‰æ‹©Windowsç‰ˆæœ¬
 echo         *********************************************************
 echo                          1.Windows 10 Professional
 echo                          2.Windows 10 Home
 echo                          3.Windows 8.1 Professional
 echo                          4.Windows 7 Professional
-echo                          0.»ØÖ÷²Ëµ¥
+echo                          0.å›ä¸»èœå•
 
 set choice=
-set /p choice=ÇëÑ¡ÔñWindows°æ±¾£º
+set /p choice=è¯·é€‰æ‹©Windowsç‰ˆæœ¬ï¼š
 if defined go%choice% @goto :s1%choice%
 if /i "%choice%" equ "0" @ goto :zM
-echo ÎŞĞ§ÊäÈë£¡£¡
+echo æ— æ•ˆè¾“å…¥ï¼ï¼
 goto :z1
 
 :z2
 echo         ********************************************************
-echo                    Microsoft KMS ¼¤»î¹¤¾ß   ---by dexter
-echo                            ***Office¼¤»î***
-echo                         ÇëÑ¡ÔñOffice°æ±¾(32Î»)
+echo                    Microsoft KMS æ¿€æ´»å·¥å…·   ---by dexter
+echo                            ***Officeæ¿€æ´»***
+echo                         è¯·é€‰æ‹©Officeç‰ˆæœ¬(32ä½)
 echo         *********************************************************
 echo                          1.Office 2016 Professional Plus
 echo                          2.Visio 2016 Professional
 echo                          3.Office 2013 Professional Plus
 echo                          4.Visio 2013 Professional
-echo                          0.»ØÖ÷²Ëµ¥
+echo                          0.å›ä¸»èœå•
 
 set bit6432= (x86)
 set choice=
-set /p choice=ÇëÑ¡ÔñOffice°æ±¾£º
+set /p choice=è¯·é€‰æ‹©Officeç‰ˆæœ¬ï¼š
 if defined go%choice% @goto :s2%choice%
 if /i "%choice%" equ "0" @ goto :zM
-echo ÎŞĞ§ÊäÈë£¡£¡
+echo æ— æ•ˆè¾“å…¥ï¼ï¼
 goto :z2
 
 :z3
 echo         ********************************************************
-echo                    Microsoft KMS ¼¤»î¹¤¾ß   ---by dexter
-echo                            ***Office¼¤»î***
-echo                         ÇëÑ¡ÔñOffice°æ±¾(64Î»)
+echo                    Microsoft KMS æ¿€æ´»å·¥å…·   ---by dexter
+echo                            ***Officeæ¿€æ´»***
+echo                         è¯·é€‰æ‹©Officeç‰ˆæœ¬(64ä½)
 echo         *********************************************************
 echo                          1.Office 2016 Professional Plus
 echo                          2.Visio 2016 Professional
 echo                          3.Office 2013 Professional Plus
 echo                          4.Visio 2013 Professional
-echo                          0.»ØÖ÷²Ëµ¥
+echo                          0.å›ä¸»èœå•
 
 set bit6432=
 set choice=
-set /p choice=ÇëÑ¡ÔñOffice°æ±¾£º
+set /p choice=è¯·é€‰æ‹©Officeç‰ˆæœ¬ï¼š
 if defined go%choice% @goto :s2%choice%
 if /i "%choice%" equ "0" @ goto :zM
-echo ÎŞĞ§ÊäÈë£¡£¡
+echo æ— æ•ˆè¾“å…¥ï¼ï¼
 goto :z3
 
 :z4
 echo         ********************************************************
-echo                    Microsoft KMS ¼¤»î¹¤¾ß   ---by dexter
-echo                            ***·şÎñÆ÷ÁĞ±í***
-echo                              ***ÇëÑ¡Ôñ***
+echo                    Microsoft KMS æ¿€æ´»å·¥å…·   ---by dexter
+echo                            ***æœåŠ¡å™¨åˆ—è¡¨***
+echo                              ***è¯·é€‰æ‹©***
 echo         *********************************************************
 echo                          1.win10.co
 echo                          2.kms.chinancce.com
 echo                          3.kms.lotro.cc
 echo                          4.www.zgbs.cc
 echo                          5.kms-win.msdn123.com
-echo	                      0.·µ»ØÖ÷²Ëµ¥
+echo	                      0.è¿”å›ä¸»èœå•
 
 set choice=
-set /p choice=ÇëÑ¡Ôñ¼¤»î·şÎñÆ÷£º
+set /p choice=è¯·é€‰æ‹©æ¿€æ´»æœåŠ¡å™¨ï¼š
 if defined go%choice% @goto :s4%choice%
 if /i "%choice%" equ "0" @ goto :zM
-echo ÎŞĞ§ÊäÈë£¡£¡
+echo æ— æ•ˆè¾“å…¥ï¼ï¼
 goto :z4
 
 :s41
 set servername=win10.co
-echo ÒÑ¸ü»»·şÎñÆ÷µ½win10.co
+echo å·²æ›´æ¢æœåŠ¡å™¨åˆ°win10.co
 goto :zM
 :s42
 set servername=kms.chinancce.com
-echo ÒÑ¸ü»»·şÎñÆ÷µ½kms.chinancce.com
+echo å·²æ›´æ¢æœåŠ¡å™¨åˆ°kms.chinancce.com
 goto :zM
 :s43
 set servername=kms.lotro.cc
-echo ÒÑ¸ü»»·şÎñÆ÷µ½kms.lotro.cc
+echo å·²æ›´æ¢æœåŠ¡å™¨åˆ°kms.lotro.cc
 goto :zM
 :s44
 set servername=www.zgbs.cc
-echo ÒÑ¸ü»»·şÎñÆ÷µ½www.zgbs.cc
+echo å·²æ›´æ¢æœåŠ¡å™¨åˆ°www.zgbs.cc
 goto :zM
 :s45
 set servername=kms-win.msdn123.com
-echo ÒÑ¸ü»»·şÎñÆ÷µ½kms-win.msdn123.com
+echo å·²æ›´æ¢æœåŠ¡å™¨åˆ°kms-win.msdn123.com
 goto :zM
 
 
 :s11
-echo Óöµ½¶Ô»°¿òµÄÊ±ºòµã»÷È·¶¨
-echo ÕıÔÚ¼¤»îWindows 10 Professional...
+echo é‡åˆ°å¯¹è¯æ¡†çš„æ—¶å€™ç‚¹å‡»ç¡®å®š
+echo æ­£åœ¨æ¿€æ´»Windows 10 Professional...
 slmgr.vbs /upk
 slmgr.vbs /skms %servername%
 slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 slmgr.vbs /ato
 slmgr.vbs /xpr
-echo ³ÌĞòÔËĞĞÍê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo ç¨‹åºè¿è¡Œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
 pause
 exit
 
 
 :s12
-echo Óöµ½¶Ô»°¿òµÄÊ±ºòµã»÷È·¶¨
-echo ÕıÔÚ¼¤»îWindows 10 Home...
+echo é‡åˆ°å¯¹è¯æ¡†çš„æ—¶å€™ç‚¹å‡»ç¡®å®š
+echo æ­£åœ¨æ¿€æ´»Windows 10 Home...
 slmgr.vbs /upk
 slmgr.vbs /skms %servername%
 slmgr.vbs /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
 slmgr.vbs /ato
 slmgr.vbs /xpr
-echo ³ÌĞòÔËĞĞÍê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo ç¨‹åºè¿è¡Œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
 pause
 exit
 
 :s13
-echo Óöµ½¶Ô»°¿òµÄÊ±ºòµã»÷È·¶¨
-echo ÕıÔÚ¼¤»îWindows 8.1 Professional...
+echo é‡åˆ°å¯¹è¯æ¡†çš„æ—¶å€™ç‚¹å‡»ç¡®å®š
+echo æ­£åœ¨æ¿€æ´»Windows 8.1 Professional...
 slmgr.vbs /upk
 slmgr.vbs /skms %servername%
 slmgr.vbs /ipk GCRJD-8NW9H-F2CDX-CCM8D-9D6T9
 slmgr.vbs /ato
 slmgr.vbs /xpr
-echo ³ÌĞòÔËĞĞÍê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo ç¨‹åºè¿è¡Œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
 pause
 exit
 
 :s14
-echo Óöµ½¶Ô»°¿òµÄÊ±ºòµã»÷È·¶¨
-echo ÕıÔÚ¼¤»îWindows 7 Professional...
+echo é‡åˆ°å¯¹è¯æ¡†çš„æ—¶å€™ç‚¹å‡»ç¡®å®š
+echo æ­£åœ¨æ¿€æ´»Windows 7 Professional...
 slmgr.vbs /upk
 slmgr.vbs /skms %servername%
 slmgr.vbs /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
 slmgr.vbs /ato
 slmgr.vbs /xpr
-echo ³ÌĞòÔËĞĞÍê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo ç¨‹åºè¿è¡Œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
 pause
 exit
 
@@ -191,12 +191,12 @@ cd C:\Program Files%bit6432%\Microsoft Office\Office16
 cscript ospp.vbs /sethst:%servername%
 cscript ospp.vbs /dstatus
 set existKey=
-set /p existKey=ÇëÊäÈëµ±Ç°KeyµÄºó5Î»£¬»Ø³µ½áÊø£º
+set /p existKey=è¯·è¾“å…¥å½“å‰Keyçš„å5ä½ï¼Œå›è½¦ç»“æŸï¼š
 cscript ospp.vbs /unpkey:%existKey%
 cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
 cscript ospp.vbs /act
 cscript ospp.vbs /dstatus
-echo ³ÌĞòÔËĞĞÍê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo ç¨‹åºè¿è¡Œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
 pause
 exit
 
@@ -205,12 +205,12 @@ cd C:\Program Files%bit6432%\Microsoft Office\Office16
 cscript ospp.vbs /sethst:%servername%
 cscript ospp.vbs /dstatus
 set existKey=
-set /p existKey=ÇëÊäÈëµ±Ç°KeyµÄºó5Î»£¬»Ø³µ½áÊø£º
+set /p existKey=è¯·è¾“å…¥å½“å‰Keyçš„å5ä½ï¼Œå›è½¦ç»“æŸï¼š
 cscript ospp.vbs /unpkey:%existKey%
 cscript ospp.vbs /inpkey:PD3PC-RHNGV-FXJ29-8JK7D-RJRJK
 cscript ospp.vbs /act
 cscript ospp.vbs /dstatus
-echo ³ÌĞòÔËĞĞÍê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo ç¨‹åºè¿è¡Œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
 pause
 exit
 
@@ -219,12 +219,12 @@ cd C:\Program Files%bit6432%\Microsoft Office\Office15
 cscript ospp.vbs /sethst:%servername%
 cscript ospp.vbs /dstatus
 set existKey=
-set /p existKey=ÇëÊäÈëµ±Ç°KeyµÄºó5Î»£¬»Ø³µ½áÊø£º
+set /p existKey=è¯·è¾“å…¥å½“å‰Keyçš„å5ä½ï¼Œå›è½¦ç»“æŸï¼š
 cscript ospp.vbs /unpkey:%existKey%
 cscript ospp.vbs /inpkey:YC7DK-G2NP3-2QQC3-J6H88-GVGXT
 cscript ospp.vbs /act
 cscript ospp.vbs /dstatus
-echo ³ÌĞòÔËĞĞÍê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo ç¨‹åºè¿è¡Œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
 pause
 exit
 
@@ -233,11 +233,12 @@ cd C:\Program Files%bit6432%\Microsoft Office\Office15
 cscript ospp.vbs /sethst:%servername%
 cscript ospp.vbs /dstatus
 set existKey=
-set /p existKey=ÇëÊäÈëµ±Ç°KeyµÄºó5Î»£¬»Ø³µ½áÊø£º
+set /p existKey=è¯·è¾“å…¥å½“å‰Keyçš„å5ä½ï¼Œå›è½¦ç»“æŸï¼š
 cscript ospp.vbs /unpkey:%existKey%
 cscript ospp.vbs /inpkey:J484Y-4NKBF-W2HMG-DBMJC-PGWR7
 cscript ospp.vbs /act
 cscript ospp.vbs /dstatus
-echo ³ÌĞòÔËĞĞÍê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo ç¨‹åºè¿è¡Œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
 pause
+exit
 exit
